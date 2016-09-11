@@ -40,15 +40,15 @@ body{
 
 }
 .dialog-container .dialog-window .ok{
-    background: url("checked.png") no-repeat 0 0;
+    background: url("../img/checked.png") no-repeat 0 0;
     background-size: 50px;
 }
 .dialog-container .dialog-window .warning{
-    background: url("warning.png") no-repeat 0 0;
+    background: url("../img/warning.png") no-repeat 0 0;
     background-size: 50px;
 }
 .dialog-container .dialog-window .cancel{
-    background: url("cancel.png") no-repeat 0 0;
+    background: url("../img/cancel.png") no-repeat 0 0;
     background-size: 50px;
 }
 
