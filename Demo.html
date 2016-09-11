@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="apple-mobile-web-app-capable" content="yes" /> <!-- 启用 WebApp 全屏模式 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="对话框Demo">
+<link rel="stylesheet" href="dialog.css">
+<head>
+    <meta charset="UTF-8">
+    <title>对话框Demo</title>
+</head>
+<body>
+<button>点击</button>
+
+<!--<div class="dialog-container">
+    <div class="dialog-window">
+        <div class="dialog-header">
+
+        </div>
+        <div class="dialog-content">
+            Do you wanna come over?
+        </div>
+        <div class="dialog-footer">
+            <button class="green">点击</button>
+            <button class="red">点击</button>
+        </div>
+    </div>
+</div>-->
+</body>
+<script type="text/javascript" src="zepto.js"></script>
+<script type="text/javascript" src="Dialog.js"></script>
+<script type="text/javascript">
+    (function ($) {
+        $.Dialog({
+            buttons: [{
+                type: "green"
+                , text: "确定"
+                ,callback : function () {
+                    alert(12);
+                    return false;
+                }
+            },{
+                type: "red"
+                , text: "取消"
+                ,callback: function () {
+                    alert(34);
+                 }
+            }],
+            message : "面积从来不是咖啡店的招牌笑容，那什么才是你早晨追逐的第一杯温暖？或许这些城市的咖啡角落会给你意想不到的答案",
+            width : "25em"
+        });
+    })(Zepto)
+</script>
+</html>
